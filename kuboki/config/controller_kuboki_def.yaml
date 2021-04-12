@@ -1,0 +1,14 @@
+# Definicion JointStateController (Publica el estado de las juntas)
+jnt_st_controller_kuboki:
+  type: joint_state_controller/JointStateController
+  publish_rate: 100
+
+# Definicion del JointVelocityController (Controlador asociado a la rueda motorizada 1)
+wheel_controller_1:
+  type: velocity_controllers/JointVelocityController
+  joint: cylinder_joint_1
+
+# Definicion del JointVelocityController (Controlador asociado a la rueda motorizada 1)
+wheel_controller_2:
+  type: velocity_controllers/JointVelocityController
+  joint: cylinder_joint_2
